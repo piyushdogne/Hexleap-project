@@ -4,14 +4,19 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 14, 19, 20;
+  --background-end-rgb: 55, 55, 55;
 }
+   
+::-webkit-scrollbar{
+  display: none;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --foreground-rgb: 55, 55, 55;
+    --background-start-rgb: 43, 27, 76;
     --background-end-rgb: 0, 0, 0;
   }
 }
@@ -30,4 +35,23 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.btns, .event-card, .player-card , .ad-card {
+  transition: ease-out .5s;
+}
+ .btns, .btn, button{
+  transition: ease-out .1s;
+}
+
+.btns:hover, .event-card:hover, .player-card:hover , .ad-card:hover {
+  cursor: pointer;
+  scale: 1.02;
+}
+
+ button:hover{
+opacity: .5;
+}
+ .btn:hover{
+background-color: rgba(29, 29, 30, 0.762);
 }
